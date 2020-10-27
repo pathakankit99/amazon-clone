@@ -1,0 +1,23 @@
+.CheckoutProductCard{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+}
+.CheckoutProductCard .ProductImage{
+    width: 100px;
+}
+.ProductDetail{
+    padding-left: 10px;
+}
+.ProductDetail h5{
+    font-weight: lighter;
+}
+.CheckoutProductCard button{
+    width: 20%;
+}
+@media screen and (max-width: 550px){
+    .CheckoutProductCard button{
+        width: 60% ;
+    }
+}

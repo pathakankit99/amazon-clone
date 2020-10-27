@@ -1,0 +1,48 @@
+.SignIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(27, 27, 27);
+}
+.FormOuterContent{
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.SignIn img{
+    width: 100px;
+}
+.SignIn .Image{
+    background-color: rgb(27, 27, 27);
+}
+.Form{
+    background-color: white;
+    padding: 10px;
+}
+.Form h2{    
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+.Form h5{
+    padding-top: 10px;
+    font-weight: 100;
+}
+.Form input{
+    display: block;
+    width: 98%;
+}
+.Form .Image{
+    background-color: inherit;
+}
+.Form button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    width: 30%;
+}

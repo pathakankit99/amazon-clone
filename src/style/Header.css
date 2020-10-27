@@ -1,0 +1,70 @@
+.Navbar{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+    color: white;
+}
+.Navbar *:focus{
+    outline: none;
+}
+.HeaderLogo{
+    background-color: black;
+    max-width: 50px;
+    padding: 20px;
+    margin: 0;
+}
+.SearchBox{
+    border: none;
+    margin: 0;
+    display: flex;
+    width: 70%;
+}
+.SearchBox input{
+    border: none;
+    width: 100%;
+    height: 38px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 10px;
+}
+
+.IconBox{
+    border: none;
+    background-color: orange;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.IconBox:hover{
+    background-color: #f5ca8e;
+    cursor: pointer;
+}
+.NavOption{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    padding: 10px
+}
+.NavOption svg{
+    width: 20px;
+}
+.cart{
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width: 1200px){
+    .NavOption{
+        font-size: 0.5rem;
+    }    
+}

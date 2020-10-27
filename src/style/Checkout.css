@@ -1,0 +1,46 @@
+.Checkout{
+    padding-top: 70px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.CartDetail{
+    padding: 10px;
+    width: 70%;
+}
+.CartAmount{
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    width: 30%;
+}
+.CartAmountContainer{
+    padding: 10px;
+    background-color: rgba(247, 247, 247, 0.925);
+}
+.Checkout button{
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    width: 70%;
+}
+
+.Checkout button:focus{
+    outline:none;
+ }
+ .Checkout button:hover{
+     background-color: #f5ca8e;
+ }
+
+ @media (max-width: 970px){
+     .Checkout{
+         text-align: center;
+         flex-wrap: wrap;
+     }
+     .CartDetail{
+         width: 80%;
+     }
+     .CartAmount{
+         width: 80%;
+     }
+ }

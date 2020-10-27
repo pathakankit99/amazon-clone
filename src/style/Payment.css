@@ -1,0 +1,51 @@
+.Payment{
+    padding-top: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.PaymentContent{
+    border-style: solid;
+    border-color: rgb(134, 134, 134);
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    width: 80%;
+    margin: 10px;
+}
+.DeliveryAddress{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px ;
+}
+.Part1{
+    flex: 1;
+}
+.Part2{
+    flex: 2;
+}
+.OrderDetail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px ;
+}
+.PaymentMethod{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+.PaymentMethod input{
+    
+}
+
+.PaymentMethod button{
+    margin-top: 10px;
+    display: block;
+    background-color: orange;
+}

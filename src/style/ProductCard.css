@@ -1,0 +1,41 @@
+.ProductCard{
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+}
+.ProductHeading{
+    max-height:30px;
+    overflow: hidden;
+}
+.ProductCard h5{
+    font-weight: lighter;
+}
+.ProductCard p{
+    padding:0;
+    margin:0;
+}
+.Image img{
+    max-width: 100%;
+    object-fit: contain;
+}
+.Image{
+    padding: 10px;
+    max-width: 100%;
+    max-height: 50%;
+    display: flex;
+    justify-content: center;
+}
+.ProductCard button{
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    width: 70%;
+}
+.ProductCard button:focus{
+   outline:none;
+}
+.ProductCard button:hover{
+    background-color: #f5ca8e;
+}
