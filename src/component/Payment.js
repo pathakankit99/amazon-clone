@@ -6,7 +6,7 @@ import { useStateValue } from './StateProvider'
 import CheckoutProductCard from "./CheckoutProductCard"
 import Subtotal from "./Subtotal"
 
-async function displayRazorpay(basket, user){
+async function DisplayRazorpay(user, basket){
     const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
     if(!res){
         alert('Razorpay SDK failed to load. Are you Online?')
@@ -23,7 +23,7 @@ async function displayRazorpay(basket, user){
     const amount=getBasketTotal(basket);
     console.log(amount)
 
-    const data = fetch('http://localhost:5000/razorpay',{
+    const data = await fetch('http://localhost:5000/razorpay',{
         method:'post',
         headers:{
             "Content-Type": "application/json",
@@ -119,7 +119,7 @@ function Payment() {
                             {
                                 basket?(
                                     <div>
-                                        <button onClick={displayRazorpay(basket,user)}>Buy Now</button>
+                                        <button onClick={()=>DisplayRazorpay(user,basket)}>Buy Now</button>
                                     </div>
                                 ):(<></>)
                             }
