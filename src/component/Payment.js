@@ -34,7 +34,7 @@ async function DisplayRazorpay(user, basket){
     })
     .then((doc)=>doc.json())
     var options = {
-        key: _dev_?'rzp_test_5OyEP2ivUQHvJ8':'API_NA', // Enter the Key ID generated from the Dashboard
+        key: _dev_?'rzp_test_5OyEP2ivUQHvJ8':'PRODUCTION_API', // Enter the Key ID generated from the Dashboard
         amount: data.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise or 500Rs
         currency: data.currency,
         name: "Amazon",
