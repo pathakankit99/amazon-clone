@@ -23,7 +23,7 @@ async function DisplayRazorpay(user, basket){
     const amount=getBasketTotal(basket);
     console.log(amount)
 
-    const data = await fetch('http://localhost:5000/razorpay',{
+    const data = await fetch('https://amazonserverak99.herokuapp.com/razorpay',{
         method:'post',
         headers:{
             "Content-Type": "application/json",
